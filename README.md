@@ -4,7 +4,7 @@
 
 # Installation
 ### Step 1
-Add the `JitPack` repository to your project level build.gradle:
+Add the `JitPack` repository to your project level `build.gradle`
 ```
 maven { url 'https://jitpack.io' }
 ```
