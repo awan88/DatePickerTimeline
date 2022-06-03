@@ -4,13 +4,13 @@
 
 # Installation
 ### Step 1
-Add the JitPack repository to your project level build.gradle:
+Add the `JitPack` repository to your project level build.gradle:
 ```
 maven { url 'https://jitpack.io' }
 ```
 
 ### Step 2
-include the following in your app's build.gradle file:
+include the following in your app's `build.gradle` file:
 ```
 dependencies {
   implementation 'com.github.User:Repo:Tag'
@@ -18,7 +18,7 @@ dependencies {
 ```
 
 # Usage
-Add DatePickerTimeline to your XML like any other view
+Add `DatePickerTimeline` to your XML like any other view
 ```
 <com.awan.datepicker.DatePickerTimeline
             android:id="@+id/date_picker"
@@ -63,4 +63,11 @@ val datePickerTimeline = findViewById<DatePickerTimeline>(R.id.mydate)
 
         val dates: Array<Date?> = arrayOf(Calendar.getInstance().time)
         datePickerTimeline.deactivateDates(dates)
+```
+
+You can also use the built in methods to change the text color
+```
+datePickerTimeline.setDateTextColor(Color.RED)
+datePickerTimeline.setDayTextColor(Color.RED)
+datePickerTimeline.setMonthTextColor(Color.RED)
 ```
