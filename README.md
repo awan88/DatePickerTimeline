@@ -71,3 +71,6 @@ datePickerTimeline.setDateTextColor(Color.RED)
 datePickerTimeline.setDayTextColor(Color.RED)
 datePickerTimeline.setMonthTextColor(Color.RED)
 ```
+
+### Convert Code From Java
+Actualy this project convert from [DatePickerTimeline](https://github.com/101Loop/DatePickerTimeline)
