@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         datePickerTimeline.setInitialDate(2022, 5, 3)
 
-        val date: Calendar = Calendar.getInstance()
+        val date = Calendar.getInstance()
         date.add(Calendar.DAY_OF_YEAR, 0)
         datePickerTimeline.setActiveDate(date)
 
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onDateSelected(year: Int, month: Int, day: Int, dayOfWeek: Int) {
                 //Do Something
-                Log.d(TAG, "onDateSelected: $day")
+                Log.d("selected", "onDateSelected: $day")
             }
 
             override fun onDisabledDateSelected(
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
                 dayOfWeek: Int,
                 isDisabled: Boolean
             ) {
-                Log.d(TAG, "onDisabledDateSelected: $day")
+                Log.d("selected", "onDisabledDateSelected: $day")
             }
         })
 
