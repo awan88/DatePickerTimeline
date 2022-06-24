@@ -13,7 +13,7 @@ maven { url 'https://jitpack.io' }
 include the following in your app's `build.gradle` file:
 ```
 dependencies {
-  implementation 'com.github.User:Repo:Tag'
+  implementation 'com.github.awan88:DatePickerTimeline:Tag'
 }
 ```
 
